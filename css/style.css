@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Permanent+Marker&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Permanent+Marker&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Shade&family=Freckle+Face&family=Great+Vibes&family=Merienda+One&family=Permanent+Marker&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Shade&family=Freckle+Face&family=Great+Vibes&family=Merienda+One&family=Permanent+Marker&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Shade&family=Freckle+Face&family=Great+Vibes&family=Merienda+One&family=Permanent+Marker&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Shade&family=Freckle+Face&family=Great+Vibes&family=Merienda+One&family=Permanent+Marker&family=Press+Start+2P&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Menu de Navegacion*/
+
+body {
+	display: grid;
+	background-color: floralwhite;
+}
+
+.tabla{
+	margin-bottom: 10%;
+}
+.tabla__subtitulos{
+	color: orangered;
+	font-family: 'Bungee Inline', cursive;
+	font-size: xx-large;
+	text-align: center;
+	text-shadow: 5px 5px 5px black;
+	margin-bottom: 50px;
+
+}
+.tabla__descripcion{
+	color: black;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: large;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+
+.carruselIndex {
+	display: grid;
+	transform: translate(350px) scale(2,1);
+	margin-bottom: 100px;
+}
+
+/*Encabezado de la pagina*/
+#barra ul{
+	list-style-type: none;	
+	
+}
+  
+#barra li {
+	display: inline-block;
+	padding: 0 10px;
+}
+
+#barra li a {
+	color: cornsilk;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+.encabezado__titulo{
+	padding: 2em;
+	color: dodgerblue;
+	font-family: 'Press Start 2P', cursive;
+	font-size: xx-large;
+	font-weight: 400;
+	text-align: center;
+	text-shadow: 5px 5px 5px black;
+	margin-bottom: 50px;
+}
+h1 {
+	animation-duration: 4s;
+	animation-name: aparecer;
+	animation-iteration-count: initial;
+ }
+ @keyframes aparecer {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+ }
+ 
+
+.descripcion{
+	color: black;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: large;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.subtitulos{
+	color: rgb(196, 130, 174);
+	font-family: 'Bungee Inline', cursive;
+	font-size: xx-large;
+	text-align: center;
+	text-shadow: 5px 5px 5px black;
+	margin-bottom: 50px;
+
+}
+
+/*cartas para seccion juegos*/
+.contenedor { 
+	max-width: 1000px;
+	width: 90%;
+	margin: 0 auto;
+    font-size: 1em;
+}
+
+.contenedor__cards {
+	margin: 70px 0;
+}
+
+.card {
+	display: grid;
+	background-image: linear-gradient(to left, yellow, dodgerblue);
+    /*background: #FFF*/
+	border-radius: 15px;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin-bottom: 50px;
+
+    
+}
+
+.card__thumbnail {
+	max-height: 80px;
+	width: 300px;
+	margin-right: 20px;
+	border-radius: 10px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.card__img {
+	width: 100px;
+	height: 100px;
+	transition: height 2s, width 1s;
+}
+.card__img:hover {
+	height: 200px; width: 200px;
+ }
+ 
+
+.card__titulo {
+	color: #085EFF;
+	font-family: 'Merienda One', cursive;
+	font-size: 30px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+.card__enlace {
+	color: #000;
+}
+
+.card__extracto {
+	line-height: 28px;
+	color: #36053D;
+	margin-bottom: 20px;
+}
+
+.boton {
+	border: none;
+	min-width: 180px;
+	height: 50px;
+	padding: 0 30px;
+	background: #000;
+	color: #fff;
+	display: inline-block;
+	border-radius: 100px;
+	text-decoration: none;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #403CC2;
+	transition: .3s ease all;
+}
+
+.boton__texto {
+	font-weight: 600;
+}
+
+.boton:hover {
+	background: #1B1881;
+	text-decoration: none;
+}
+
+.boton--absolute {
+	position: absolute;
+	right: 20px;
+	bottom: -25px;
+}
+
+.consolas{
+	margin: auto;
+
+}
+
+.consolas__titulo{
+	font-family: 'Freckle Face', cursive;
+	font-weight: 300;
+	font-size: xx-large;
+	color: black;
+	text-align: center;
+	line-height: 10rem;
+}
+.socalo {
+	background-color: rgb(228, 227, 227) ;
+}
+
+
+
+
+
+#barra {
+	min-height: 120px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(to bottom, #00439c, dodgerblue
+	)
+}
+
+
+
+
+.redes img {
+	display: flex;
+	flex-direction: column;
+	max-width: 40px;
+
+}
+
+.contenedor__noticias {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-areas: 
+	"noticia1 noticia1"
+	"noticia2 noticia2"
+	"noticia3 noticia3";
+}
+
+.noticia1 {
+	grid-area: noticia1;
+	display: flex;
+	flex-direction: row;
+}
+
+.noticia2 {
+	grid-area: noticia2;
+	display: flex;
+	flex-direction: row;
+}
+
+.noticia3 {
+	grid-area: noticia3;
+	display: flex;
+	flex-direction: row;
+}
+img {
+	animation-duration: 4s;
+	animation-name: aparecer;
+	animation-iteration-count: initial;
+ }
+ @keyframes aparecer {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+ }
+ table {
+	animation-duration: 4s;
+	animation-name: aparecer;
+	animation-iteration-count: initial;
+ }
+ @keyframes aparecer {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+ }
+
+.contenido__noticia1 {
+	float: right;
+}
+.titulo__noticia1 {
+	color: wheat;
+}
+
+#footer {
+	min-height: 400px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #00439c;
+	margin-top: 300px;
+
+}
+#footer .PdePag {
+	display: inline-block;
+	padding: 10px 10px 10px;
+}
+#footer .titulo__footer {
+	color: cornsilk;
+	font-size: 30px;	
+}
+#footer .parrafo {
+	color: cornsilk;
+	font-size: 20px;
+}
+
+
+
+
+
+
